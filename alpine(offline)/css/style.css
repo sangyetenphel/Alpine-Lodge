@@ -1,0 +1,391 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+/*Booking*/
+
+.booking{
+	box-sizing:border-box;
+	background:#eee2c4 url('../img/wood-grain.jpg')no-repeat center center;
+	color:#485e74;
+	line-height:1.6;
+	font-family:"Segoe UI",Tahoma,Genova,Verdana,sans-serif;
+	padding:1em;
+}
+.container-booking{
+	max-width:1170px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:1em;
+}
+.company-info ul{
+	list-style:none;
+	padding:0;
+}
+
+.wrapper{
+	box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+.wrapper > *{
+	padding:1em;
+}
+.company-info{
+	background:#35424a;
+    color:#ffffff;
+}
+.company-info h3,.company-info ul{
+	text-align:center;
+	margin:0 0 1rem 0;
+}
+.company-info form{
+	padding-right:25px;
+}
+.company-info form input{
+	width:100%;
+	padding:6px;
+	border:1px solid #0c3f52;
+}
+.company-info form button{
+	width:30%;
+	padding:10px;
+	border:1px solid #0c3f52;
+	background:#5d5d5d;
+	border:0;
+	text-transform:uppercase;
+	color:#ffffff;
+}
+.company-info form  button:hover,.contact form button:focus{
+	background:#444444;
+	color:#ffffff;
+	outline:0;
+	transition:background-color 2s ease-out;
+}
+.company-info a button{
+	width:30%;
+	padding:10px;
+	border:1px solid #0c3f52;
+	background:#5d5d5d;
+	border:0;
+	color:#ffffff;
+}
+.company-info a button:hover{
+	background:#444444;
+	color:#ffffff;
+	outline:0;
+	transition:background-color 2s ease-out;
+}
+.contact{
+	 background:#e6e6e6;
+}
+
+/* Booking Form Styles*/
+.contact form{
+	padding-right:25px;
+}
+.contact form label{
+	display:block;
+}
+.contact form p{
+	margin:0;
+}
+
+.contact form input,.contact form textarea{
+	width:100%;
+	padding:1em;
+	border:1px solid #0c3f52;
+}
+.contact form button{
+	width:30%;
+	padding:10px;
+	border:1px solid #0c3f52;
+}
+.contact form select{
+	font-family:"Segoe UI",Tahoma,Genova,Verdana,sans-serif;
+	width:100%;
+	border:1px solid #0c3f52;
+	padding:8px;
+	font-size:15px;
+	height:40px;
+}
+.contact form input#yesMeals,.contact form input#noMeals,.contact form input#balcony{
+	width:auto;
+}
+.contact form button{
+	background:#5d5d5d;
+	border:0;
+	text-transform:uppercase;
+	color:#ffffff;
+}
+.contact form  button:hover,.contact form button:focus{
+	background:#444444;
+	color:#ffffff;
+	outline:0;
+	transition:background-color 2s ease-out;
+}
+
+/*Booking Latge Screen*/
+
+@media(min-width:700px){
+	.wrapper{
+		display:grid;
+		grid-template-columns: 1fr 2fr;
+	}
+	.wrapper > *{
+		padding:2em;
+	}
+	.company-info h3,.company-info ul, .brand{
+		text-align:left;
+	}
+}
+
+
+.success{
+	color: #ff9966;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#0c3f52;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+/* Header **/
+header{
+  background:#eee2c4 url('../img/wood-grain.jpg')no-repeat center center;
+  color:#0c3f52;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#0c3f52 3px solid;
+}
+
+header a{
+	text-decoration:none;
+	color:#000;
+	height: 2.25rem;
+    font-weight: bold;
+    font-size: 1.313rem;
+    line-height: 2.25rem;
+    font-family: "Podkova", Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    text-transform: uppercase;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+ header .current a{
+  color:#0c3f52;
+  font-weight:bold;
+}
+header .highlight{
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('../img/showcase.jpg') -200px -400px;
+  text-align:center;
+  color:#ffffff;
+  font-family:Abril Fatface;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+  font-family:Prociono;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#0c3f52;
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+	height:140px;
+	width:200px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+
+/* Main-col */
+#main{
+	background:url('../img/f.jpg')-160px -10px;
+}
+#about{
+	background:url('../img/b.jpg');
+}
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+#footer-menus-wrapper{
+    position: relative;
+    background:#0c3f52;
+    color: #fff;
+    padding:15px;
+	font-family:"sans-serif";
+}
+
+footer{
+  padding:20px;
+  color:black;
+  background:#eee2c4 url(../img/wood-grain.jpg) no-repeat center center;
+  text-align: center;
+  font-size: 0.875rem;
+  overflow:hidden;
+  font-family:"sans-serif";
+  font-size:18px;
+}
+footer .alignleft{
+	float:left;
+}
+footer .alignright{
+	float:right;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar,
+  footer .alignleft,footer .alignright{
+	
+    float:none;
+    text-align:center;
+    width:100%;
+	}
+	
+  header{
+    padding-bottom:20px;
+  }
+  
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+  
+  #footer-menus-wrapper{
+	  text-align:center;
+  }
+}
